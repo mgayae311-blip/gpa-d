@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic GPA Calculator</title>
+  <style>
+    body {
+        background: blue;
+        font-family: Arial, sans-serif;
+        color: white;
+        padding: 20px;
+    }
+    h1 { margin-bottom: 20px; }
+    .gpa-table {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 5px;
+        width: fit-content;
+    }
+    .gpa-table input {
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .submit {
+        background: white;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        padding: 8px 15px;
+    }
+    .submit:hover {
+        background: red;
+        color: white;
+    }
+    table {
+        width: 100%;
+        max-width: 800px;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background: white;
+        color: black;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    th { background-color: #f2f2f2; font-weight: bold; }
+    .summary-box {
+        margin-top: 20px;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+        max-width: 800px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h1>CREATE GPA</h1>
+
+<div class="gpa-table">
+  <input type="text" id="course-name" placeholder="ENTER COURSE NAME" required>
+  <input type="number" id="marks" placeholder="MARKS (0-100)">
+  <input type="number" id="credits" placeholder="CREDITS (e.g., 3, 4)">
+  <input type="button" value="submit" onclick="createGPA()" class="submit">
+</div>
+
+<h2>Course List & Grades</h2>
+<table>
+  <thead>
+  <tr>
+    <th>Course Name</th>
+    <th>Marks</th>
+    <th>Grade</th>
+    <th>Credits</th>
+    <th>Points</th>
+  </tr>
+  </thead>
+  <tbody id="course-rows">
+  </tbody>
+</table>
+
+<div class="summary-box">
+  <div>TOTAL CREDITS: <span id="total-credits">0</span></div>
+  <div>CUMULATIVE GPA: <span id="final-gpa">0.00</span></div>
+</div>
+
+<script src="name.js"></script>
+</body>
+</html>
