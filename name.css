@@ -60,3 +60,28 @@ body {
         font-size: 18px;
         font-weight: bold;
     }
+    @media (max-width: 600px) {
+        body {
+            padding: 10px; /* Punguza nafasi za pembeni kwenye simu */
+        }
+
+        /* Fanya fomu ya kuingiza data ishuke chini (Column) badala ya pembeni */
+        .gpa-table {
+            flex-direction: column;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Fanya input box zijaze upana wote wa kioo cha simu */
+        .gpa-table input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Muhtasari wa chini ushuke wima pia ili usisongane */
+        .summary-box {
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+        }
+    }
