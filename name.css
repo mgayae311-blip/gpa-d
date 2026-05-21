@@ -1,0 +1,62 @@
+body {
+        background: blue;
+        font-family: Arial, sans-serif;
+        color: white;
+        padding: 20px;
+        text-align:center;
+    }
+    h1 { margin-bottom: 20px; }
+    .gpa-table {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 5px;
+        width: fit-content;
+    }
+    .gpa-table input {
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .submit {
+        background: white;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        padding: 8px 15px;
+    }
+    .submit:hover {
+        background: red;
+        color: white;
+    }
+    table {
+        width: 100%;
+        max-width: 800px;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background: white;
+        color: black;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    th { background-color: #f2f2f2; font-weight: bold; }
+    .summary-box {
+        margin-top: 20px;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+        max-width: 800px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: bold;
+    }
